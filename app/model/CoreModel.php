@@ -99,9 +99,9 @@ class CoreModel
         foreach ($data as $key => $value){
             $options.= " `$key` = '$value', ";
         }
-        $options = rtrim($options, ',');
+        $options = rtrim($options, ', ');
 
-        $query = "UPDATE `". $this->table."` SET ". $options . "WHERE `id`='$id'";
+        $query = "UPDATE `". $this->table."` SET". $options . " WHERE `id`='$id'";
 
         return $this->db_query($query);
     }

@@ -6,8 +6,8 @@
 
         <div> Mato Vienetas :</div>
         <select name="unit">
-            <option value="KG">KG</option>
-            <option value="PCS">VNT</option>
+            <option value="KG"[@unit_KG]>KG</option>
+            <option value="PCS"[@unit_PCS]>VNT</option>
         </select> <br>
 
 
