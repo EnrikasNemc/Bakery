@@ -7,7 +7,7 @@
         <div> Preke : </div>
 
         <select name="product_id">
-            (@productOptions)
+            [@productOptions]
         </select>
 
         <div> Vakarysktis likutis : </div>
@@ -23,14 +23,19 @@
         <input type="number" name="sold"> <br>
 
         <div> Galutinis likutis : </div>
-        <input type="number" name="closed"> <br>
+        <input type="number" name="closed"> <br><br>
 
-        <input type="submit" value="Issaugoti duomenys"><br><br>
+        <input type="submit" value="Issaugoti duomenys" class="btn btn-danger"><br><br>
 
     </form>
     <form method="POST" action="?view=product&action=new">
         <div>
-            <input type="submit" class="btn btn-danger" value="New Product"> <br>
+            <input type="submit" class="btn btn-danger" value="New Product"> <br><br>
+        </div>
+    </form>
+    <form method="POST" action="?view=product-history&action=list">
+        <div>
+            <input type="submit" class="btn btn-danger" value="Product history List"> <br>
         </div>
     </form>
 </div>

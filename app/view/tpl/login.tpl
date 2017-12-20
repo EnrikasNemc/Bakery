@@ -15,4 +15,5 @@
             <input type="submit" class="btn btn-danger" value="Register"> <br>
         </div>
     </form>
+
 </div>

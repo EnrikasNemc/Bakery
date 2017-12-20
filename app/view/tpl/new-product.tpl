@@ -26,7 +26,17 @@
         <div> Nuotrauka :</div>
         <input type="file" multiple accept="image/jpeg, image/png" name="picture"> <br><br>
 
-        <input type="submit" class="btn btn-danger" value="Issaugoti duomenys"> <br>
+        <input type="submit" class="btn btn-danger" value="Issaugoti duomenys"> <br><br>
 
+    </form>
+    <form method="POST" action="?view=product-history&action=new" enctype="multipart/form-data">
+
+        <input type="submit" class="btn btn-danger" value="History"> <br><br>
+
+    </form>
+    <form method="POST" action="?view=product&action=list">
+        <div>
+            <input type="submit" class="btn btn-danger" value="Product list"> <br>
+        </div>
     </form>
 </div>

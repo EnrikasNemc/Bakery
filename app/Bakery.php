@@ -20,6 +20,7 @@ class Bakery
             die();
         }
 
+
         $view = $_GET['view'];
         $action = $_GET['action'];
 
@@ -73,8 +74,14 @@ class Bakery
                     (new UsersController())->isLogged();
                     if ($action == 'create')
                         (new ProductController())->store();
-                    if ($action== 'update')
+                    elseif ($action== 'update')
                         (new ProductController())->update();
+                    elseif ($action == 'new'){
+                        (new ProductController())-> create();
+                    }
+                    elseif ($action == 'list'){
+                        (new ProductController())->list ();
+                    }
 
                     break;
 
@@ -84,6 +91,10 @@ class Bakery
                        (new ProductHistoryController())->store();
                         (new UsersController())->isLogged();
                     }
+                    elseif ($action == 'new')
+                        (new ProductHistoryController())-> create();
+                    elseif ($action == 'list')
+                        (new ProductHistoryController())->list ();
 
                     break;
                 case 'users' :
